@@ -1,0 +1,18 @@
+{
+  "name": "hitekAI",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts -H 0.0.0.0"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.53",
+    "@langchain/core": "^0.3.72",
+    "@langchain/groq": "^0.2.3",
+    "hono": "^4.9.4",
+    "hono-rate-limiter": "^0.4.2",
+    "mongodb": "^6.19.0",
+    "zod": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
