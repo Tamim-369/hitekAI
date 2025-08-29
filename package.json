@@ -1,7 +1,8 @@
 {
   "name": "hitekAI",
   "scripts": {
-    "dev": "bun run --hot src/index.ts -H 0.0.0.0"
+    "dev": "bun run --hot src/index.ts -H 0.0.0.0",
+    "start": "bun run src/index.ts "
   },
   "dependencies": {
     "@langchain/community": "^0.3.53",

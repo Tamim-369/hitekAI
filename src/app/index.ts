@@ -15,6 +15,13 @@ app.use("*", logger);
 app.use("*", csrfMiddleware);
 app.use("*", limiter);
 
+// Root route for sanity check
+app.get("/", (c) => c.json({
+  name: "hitekAI API",
+  status: "ok",
+  routes: ["/health", "/admin", "/customer"]
+}));
+
 // ✅ Mount AI Routes
 app.route("/admin", adminRoutes);
 app.route("/customer", customerRoutes);
